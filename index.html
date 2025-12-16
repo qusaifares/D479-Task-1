@@ -4,27 +4,51 @@
 <head>
   <title>Taniti Tourism</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="script.js"></script>
 </head>
 <body>
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="activities.html">Activities</a>
-    <a href="lodging.html">Lodging</a>
-    <a href="food.html">Food</a>
+  <nav role="navigation">
+    <div class="nav-section" data-category="general">
+      <a href="index.html">Home</a>
+      <a href="essential-trip-planning.html">Essential Trip Planning</a>
+    </div>
+    <div class="nav-section" data-category="booking">
+      <a href="activities.html">Activities</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="food.html">Food</a>
+    </div>
+  </nav>
   </nav>
 </header>
 
 <div class="container">
   <div class="section-card">
     <h1>Welcome to Taniti</h1>
-    <p>Explore the beautiful island of Taniti. Discover attractions, lodging, and local cuisine.</p>
+    <p>Discover the beautiful tropical island of Taniti with pristine beaches, exciting activities, and authentic local experiences. Plan your perfect getaway with our comprehensive travel resources.</p>
   </div>
 
   <div class="grid">
-    <div class="card"><a href="activities.html">Explore Activities →</a></div>
-    <div class="card"><a href="lodging.html">Find Lodging →</a></div>
-    <div class="card"><a href="food.html">Local Food →</a></div>
+    <div class="card">
+      <h3>Explore Activities</h3>
+      <p>Beach adventures, hiking trails, and exciting excursions</p>
+      <a href="activities.html">Discover Activities →</a>
+    </div>
+    <div class="card">
+      <h3>Find Lodging</h3>
+      <p>Hotels, resorts, and family-owned accommodations</p>
+      <a href="lodging.html">Browse Lodging →</a>
+    </div>
+    <div class="card">
+      <h3>Local Food</h3>
+      <p>Authentic cuisine and dining experiences</p>
+      <a href="food.html">Explore Dining →</a>
+    </div>
+    <div class="card">
+      <h3>Essential Trip Planning</h3>
+      <p>Transportation, safety info, and practical travel tips</p>
+      <a href="trip-planning.html">Plan Your Trip →</a>
+    </div>
   </div>
 </div>
 </body>

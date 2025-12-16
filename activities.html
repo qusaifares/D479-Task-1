@@ -2,24 +2,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Activities</title>
+  <title>Taniti Tourism</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="script.js"></script>
 </head>
 <body>
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="activities.html">Activities</a>
-    <a href="lodging.html">Lodging</a>
-    <a href="food.html">Food</a>
+  <nav role="navigation">
+    <div class="nav-section" data-category="general">
+      <a href="index.html">Home</a>
+      <a href="essential-trip-planning.html">Essential Trip Planning</a>
+    </div>
+    <div class="nav-section" data-category="booking">
+      <a href="activities.html">Activities</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="food.html">Food</a>
+    </div>
   </nav>
 </header>
 
 <div class="container">
-  <h1>Activities</h1>
-  <div class="grid">
-    <div class="card"><a href="activity_beach.html">Beaches →</a></div>
-    <div class="card"><a href="activity_hiking.html">Hiking →</a></div>
+  <div class="section-card">
+    <h1>Activities & Adventures</h1>
+    <p>Discover the best of Taniti with our curated selection of activities. From relaxing beach days to adventurous hiking trails, there's something for every traveler.</p>
+  </div>
+
+  <div class="activity-categories">
+    <h2>Water Activities</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Beach Activities</h3>
+        <p>White-sand beaches perfect for swimming, snorkeling, and relaxation</p>
+        <a href="activity_beach.html">Explore Beaches →</a>
+      </div>
+    </div>
+
+    <h2>Land Adventures</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Hiking & Nature</h3>
+        <p>Scenic mountain trails and lush jungle paths across the island</p>
+        <a href="activity_hiking.html">Discover Trails →</a>
+      </div>
+      <div class="card">
+        <h3>Zip-lining</h3>
+        <p>Thrilling canopy tours with breathtaking island views</p>
+        <a href="activity_ziplining.html">Adventure Awaits →</a>
+      </div>
+    </div>
   </div>
 </div>
 </body>

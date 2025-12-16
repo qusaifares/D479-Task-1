@@ -2,23 +2,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lodging</title>
+  <title>Taniti Tourism</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="script.js"></script>
 </head>
 <body>
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="activities.html">Activities</a>
-    <a href="lodging.html">Lodging</a>
-    <a href="food.html">Food</a>
+  <nav role="navigation">
+    <div class="nav-section" data-category="general">
+      <a href="index.html">Home</a>
+      <a href="essential-trip-planning.html">Essential Trip Planning</a>
+    </div>
+    <div class="nav-section" data-category="booking">
+      <a href="activities.html">Activities</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="food.html">Food</a>
+    </div>
+    </div>
   </nav>
 </header>
 
 <div class="container">
-  <h1>Lodging Options</h1>
   <div class="section-card">
-    <p>Find hotels, guesthouses, and beach resorts across Taniti.</p>
+    <h1>Lodging Options</h1>
+    <p>Discover the perfect accommodation for your Taniti getaway. From family-owned bed & breakfasts to luxury beach resorts, we offer a variety of options to suit every traveler's needs and budget.</p>
+  </div>
+
+  <div class="filter-section">
+    <h3>Filter by Type</h3>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all" onclick="filterLodging('all')">All Accommodations</button>
+      <button class="filter-btn" data-filter="family-owned" onclick="filterLodging('family-owned')">Family-Owned</button>
+      <button class="filter-btn" data-filter="resort" onclick="filterLodging('resort')">Resorts</button>
+      <button class="filter-btn" data-filter="bnb" onclick="filterLodging('bnb')">B&B</button>
+    </div>
+  </div>
+
+  <div class="lodging-grid">
+    <div class="lodging-card family-owned" data-type="family-owned">
+      <h3>Sunset Family Inn</h3>
+      <p class="lodging-type">Family-Owned Hotel</p>
+      <p>Cozy family-run hotel with personalized service and home-cooked meals. Located just 5 minutes from the main beach.</p>
+      <div class="amenities">
+        <span>🍳 Breakfast Included</span>
+        <span>🏖️ Beach Access</span>
+        <span>📶 Free WiFi</span>
+      </div>
+      <a href="#" class="booking-link interactive-link">Check Availability</a>
+    </div>
+
+    <div class="lodging-card family-owned" data-type="family-owned">
+      <h3>Mountain View Guesthouse</h3>
+      <p class="lodging-type">Family-Owned B&B</p>
+      <p>Traditional island hospitality with stunning mountain views. Family recipes and local insights included.</p>
+      <div class="amenities">
+        <span>🏔️ Mountain Views</span>
+        <span>🍽️ Local Cuisine</span>
+        <span>🚗 Free Parking</span>
+      </div>
+      <a href="#" class="booking-link interactive-link">Check Availability</a>
+    </div>
+
+    <div class="lodging-card resort" data-type="resort">
+      <h3>Taniti Beach Resort</h3>
+      <p class="lodging-type">Luxury Beach Resort</p>
+      <p>Full-service beachfront resort with spa, multiple restaurants, and water sports activities.</p>
+      <div class="amenities">
+        <span>🏖️ Private Beach</span>
+        <span>🍽️ 3 Restaurants</span>
+        <span>💆 Spa Services</span>
+      </div>
+      <a href="#" class="booking-link interactive-link">Check Availability</a>
+    </div>
+
+    <div class="lodging-card bnb" data-type="bnb">
+      <h3>Tropical Garden B&B</h3>
+      <p class="lodging-type">Bed & Breakfast</p>
+      <p>Charming B&B surrounded by tropical gardens. Quiet retreat with personalized attention.</p>
+      <div class="amenities">
+        <span>🌺 Garden Setting</span>
+        <span>🍳 Gourmet Breakfast</span>
+        <span>🦋 Nature Walks</span>
+      </div>
+      <a href="#" class="booking-link interactive-link">Check Availability</a>
+    </div>
+
+    <div class="lodging-card resort" data-type="resort">
+      <h3>Island Paradise Resort</h3>
+      <p class="lodging-type">All-Inclusive Resort</p>
+      <p>Complete vacation package with all meals, drinks, and activities included in one price.</p>
+      <div class="amenities">
+        <span>🍹 All-Inclusive</span>
+        <span>🏊 Pool Complex</span>
+        <span>🎯 Activities</span>
+      </div>
+      <a href="#" class="booking-link interactive-link">Check Availability</a>
+    </div>
+
+    <div class="lodging-card bnb family-owned" data-type="bnb family-owned">
+      <h3>Coastal Breeze B&B</h3>
+      <p class="lodging-type">Family-Owned B&B</p>
+      <p>Oceanfront bed & breakfast run by local family. Fresh seafood breakfast and cultural experiences.</p>
+      <div class="amenities">
+        <span>🌊 Ocean Views</span>
+        <span>🐟 Fresh Seafood</span>
+        <span>🎭 Cultural Tours</span>
+      </div>
+      <a href="#" class="booking-link interactive-link">Check Availability</a>
+    </div>
   </div>
 </div>
 </body>
